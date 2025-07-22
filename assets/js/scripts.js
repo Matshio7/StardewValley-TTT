@@ -57,4 +57,18 @@ document.addEventListener('DOMContentLoaded', () => {
             attribution: '&copy; OpenStreetMap'
         }).addTo(map);
     }
+
+    // Sections einblenden
+    const sections = document.querySelectorAll('section');
+    sections.forEach(sec => sec.classList.add('hidden'));
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    sections.forEach(sec => observer.observe(sec));
 });
