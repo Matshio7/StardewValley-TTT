@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rechner & Tools - Stardew Valley TTT</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/scripts.js"></script>
+</head>
+<body>
+<header>
+    <h1>Rechner &amp; Tools</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="guides.html">Guides</a></li>
+            <li><a href="maps.html">Karten</a></li>
+            <li><a href="shop.html">Shop & Wirtschaft</a></li>
+            <li><a href="calculators.html">Rechner & Tools</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="profit">
+        <h2>Ertragsrechner</h2>
+        <form id="profit-form">
+            <label for="cropPrice">Verkaufspreis pro Einheit:</label>
+            <input type="number" id="cropPrice" required>
+            <label for="cropQty">Anzahl:</label>
+            <input type="number" id="cropQty" required>
+            <button type="submit">Berechnen</button>
+        </form>
+        <p id="profit-result"></p>
+    </section>
+    <section id="cc">
+        <h2>Community-Center-Tracker</h2>
+        <p>Setze Haken bei den bereits abgegebenen Gegenst&auml;nden.</p>
+        <ul>
+            <li><label><input type="checkbox"> Fr&uuml;hlingsgem&uuml;se-Bundle</label></li>
+            <li><label><input type="checkbox"> Schreinerei-Bundle</label></li>
+        </ul>
+    </section>
+    <section id="tools">
+        <h2>Werkzeug-Upgrade-Rechner</h2>
+        <form id="upgrade-form">
+            <label for="toolLevel">Aktuelles Level:</label>
+            <select id="toolLevel">
+                <option value="1">Basis</option>
+                <option value="2">Kupfer</option>
+                <option value="3">Stahl</option>
+            </select>
+            <button type="submit">Kosten anzeigen</button>
+        </form>
+        <p id="upgrade-result"></p>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Stardew Valley TTT</p>
+</footer>
+</body>
+</html>
